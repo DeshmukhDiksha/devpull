@@ -14,4 +14,3 @@ export default {
     themes: ["dark", "cupcake"],
   }
 }
-
