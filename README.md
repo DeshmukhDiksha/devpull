@@ -8,4 +8,8 @@
 7. Install react router dom.
 8. Add routes for navbar, home and footer
 9. Create components for home and footer and profile (Use rafce using ext ES7+ React/Redux/GraphQL)
-10. Add routes in home page for login and profile 
+10. Add routes in home page for login and profile.
+11. Install Axios
+12. Install CORS in backend with configuration origin and credentials true.
+13. For API calls from front end - pass withCredentils true for further server API communication .
+
