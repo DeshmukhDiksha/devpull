@@ -17,4 +17,6 @@
 16. Set user after successfull login 
 17. Fetch user if logged in on refresh in home page and handle 401 for user authentication.
 18. Handle route access for logged in user(like protected routes if user is logged in only ex. /feed)
-19. Logout
+19. Logout.
+20. Feed.
+21. User card

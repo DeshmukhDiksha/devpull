@@ -30,7 +30,7 @@ function NavBar() {
       <div className="flex gap-2">
         {/* <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" /> */}
         {user !== null && <div className="dropdown dropdown-end mx-5 flex items-center gap-2">
-          <div>{user.firstName + ' ' + user.lastName}</div>
+          <div> Welcome {user.firstName }</div>
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
               <img
