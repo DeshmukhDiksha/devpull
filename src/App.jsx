@@ -1,19 +1,26 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './Home';
-import Login from './Login';
-import Profile from './Profile';
+import Home from './components/Home';
+import Login from './components/Login';
+import Profile from './components/Profile';
+import Store from './store/Store';
+import { Provider } from 'react-redux';
+import Feed from './components/Feed';
 
 function App() {
   return (
     <>
+    <Provider store={Store}>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} >
+            <Route path='/' element={<Feed />}></Route>
             <Route path='/login' element={<Login />}></Route>
             <Route path='/profile' element={<Profile />}> </Route>
+
           </Route>
         </Routes>
       </BrowserRouter>
+      </Provider> 
     </>
   );
 }
