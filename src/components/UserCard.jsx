@@ -15,8 +15,8 @@ const UserCard = () => {
                 <h2 className="card-title">{user.firstName + ' ' + user.lastName}</h2>
                 <p>{user.about}</p>
                 <div className="card-actions justify-end my-5">
-                    <button className="btn btn-outline soft  border-red-500">Reject</button>
-                    <button className="btn btn-outline soft border-green-500">Show Interest</button>
+                    <button className="btn btn-outline soft  border-gray-500 text-red-200">Reject</button>
+                    <button className="btn btn-outline soft border-gray-500 text-green-200">Show Interest</button>
                 </div>
             </div>
         </div>
