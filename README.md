@@ -19,4 +19,8 @@
 18. Handle route access for logged in user(like protected routes if user is logged in only ex. /feed)
 19. Logout.
 20. Feed.
-21. User card
+21. User card.
+22. Edit Profile and toast for success .
+23. Show all user connections.
+24. Show all connection request.
+25. Accept and reject connection request.

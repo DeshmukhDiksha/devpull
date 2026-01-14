@@ -7,10 +7,10 @@ import { useNavigate } from 'react-router-dom';
 import { BASE_URL } from '../utils/constants';
 
 const Login = () => {
-    const [username, setUsername] = useState('pratikshaJ@gmail.com');
-    const [password, setPassword] = useState('pratikha@123');
+    const [username, setUsername] = useState('nikhilJ@gmail.com');
+    const [password, setPassword] = useState('NikhilJ@123');
     const [errorMessage, setErrorMessage] = useState('');
-
+    // TODO: Use useActionState for form and manage states
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
@@ -31,7 +31,7 @@ const Login = () => {
                 withCredentials: true,
             });
             dispatch(setUser(loginResp.data.user));
-            if(errorMessage) {
+            if (errorMessage) {
                 setErrorMessage('');
             }
             return navigate('/');
@@ -52,14 +52,13 @@ const Login = () => {
         <div className='flex justify-center align-middle h-full'>
             <div className="h-full flex justify-center items-center">
                 <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
-                    <legend className="fieldset-legend text-1xl text-white font-bold">Login</legend>
 
                     <label htmlFor="username" className="label">Email</label>
-                    <input type="email" id="username"  className="input" placeholder="Email" onChange={onUserNameChange} value={username}/>
+                    <input type="email" id="username" className="input" placeholder="Email" onChange={onUserNameChange} value={username} />
 
                     <label htmlFor="password" className="label">Password</label>
-                    <input type="password" id="password" className="input" placeholder="Password" onChange={onPasswordChange} value={password}/>
-                    
+                    <input type="password" id="password" className="input" placeholder="Password" onChange={onPasswordChange} value={password} />
+
                     <p className='text-red-500 font-medium'> {errorMessage}</p>
                     <button className="btn btn-neutral mt-4" onClick={onLogin}>Sign In </button>
                 </fieldset>

@@ -1,0 +1,14 @@
+.edit-profile-animation {
+    /* animation: slideLeftAnim 0.5s ease; */
+    animation-direction: reverse;
+}
+
+/* @keyframes slideLeftAnim {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -150px;
+    }
+} */
